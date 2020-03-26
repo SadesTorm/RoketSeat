@@ -28,3 +28,14 @@ Estado -> informação que vai ser mantida pelo componente
   /**********************************************************
 
   //-------------------------------------------------------------------------------
+  arquivo route do Front 
+  // exact -> o caminha tem que ser extamente aqule para acessar tal pagina
+  <Route path="/" exact component={Logon}/>
+  
+  //-------------------------------------------------------------------------------
+  arquivo index Register
+  // style acessa JS e {acessa codigo JS dentro do HTMl} e {{acessa um Object Js}}
+  <input placeholder="UF" style={{width: 80}} />
+
+  //-------------------------------------------------------------------------------
+  npm instal axios -> client http

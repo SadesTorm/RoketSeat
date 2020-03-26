@@ -1,6 +1,7 @@
-//inport funcionalidades do modulo express 
+﻿//inport funcionalidades do modulo express 
 const express = require('express');
 const routes = require('./routes');
+const cors = require('cors');
 
 // armazena uma aplicaçao
 const app = express();

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styleGlobal.css';
 import Header from './Header';
-import Logon from './pages/Logon';
+import Routes from "./routes";
 
 
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       
-     <Logon />
+     <Routes />
     
       
     </div>
