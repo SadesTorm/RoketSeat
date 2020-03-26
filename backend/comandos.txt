@@ -1,0 +1,55 @@
+npm  install express
+
+cd /d -> mudar para diretorio externo
+dir -> lista arquivos de um diretorio
+create-react-app nome do projeto -> cria um projeto react 
+
+node -> nome do arquivo para ser executado
+
+******************* METDODOS HTTP **************************
+
+GET: Buscar uma informação do backend
+POST: Criar uma informação no backend
+PUT: Alterar uma informação no backend
+DELETE: Deletar uma informação no backend
+
+*************************************************************
+
+
+------------- METODOS HTTP ---------------------
+GET: Buscar uma informação do backend
+POST: Criar uma informação no backend
+PUT: Alterar uma informação no backend
+DELETE: Deletar uma informação no backend
+
+------------------------------------------------
+
+------------- TIPO DE PARAMETROS -------------
+QUERY: Parametros nomeados enviados na rota apos simbolo de "?" (filtros e paginação)
+ROUTE PARAMS: Parametro para identificar recursos
+REQUEST BODY: Corpo da requisição, utilizado para criar ou alterar recursos
+----------------------------------------------
+
+------------- DATABASE -----------------------
+SQL: MySql, SqLite, PostgreSql, Oracle, Microsoft Sql server
+NoSQL: MongoDB, CouchDB, etc
+----------------------------------------------
+
+  return  knex.schema.createTable('ongs', function(table){
+        table.string('id').notNullable();
+        table.string('nome').notNullable();
+        table.string('email').notNullable();        
+        table.string('telefone').notNullable();
+        table.string('cidade').notNullable();
+        table.string('uf', 2).notNullable();       
+    });
+
+    
+    return  knex.schema.createTable('incidents', function(table){
+    table.increments()
+    table.string('titulo').notNullable();
+    table.string('descricao').notNullable();        
+    table.decimal('valor').notNullable();
+    table.string('fk_ong').notNullable();
+   table.foreign('fk_ong').references('id').inTable('ongs')     
+});
