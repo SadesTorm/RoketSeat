@@ -12,7 +12,7 @@ function App() {
   
   return (
     <Header> 
-      Testando passagem de valor por paramentro
+      Be The Hero
     </Header>  
     
   );
