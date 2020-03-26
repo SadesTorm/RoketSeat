@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+
+import Header from './Header';
 
 function App() {
+
+  //OBS: Compontente sempre com letra Maiuscula no inicio
+  // componente é uma função que restorna um HTML
+  // liveReload -> troca valor da page em tempo real 
+  //JSX - quando o html esta integrado dentro do Js
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Header> 
+      Testando passagem de valor por paramentro
+    </Header>  
+    
   );
 }
 
