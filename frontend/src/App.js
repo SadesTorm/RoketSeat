@@ -12,7 +12,7 @@ function App() {
   
   return (
     <Header> 
-      Be The Hero
+      Be The Hero teste 2
     </Header>  
     
   );
