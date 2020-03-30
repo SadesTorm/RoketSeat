@@ -13,8 +13,7 @@ export default function Detail(){
     const incident = route.params.incident;
 
     const navigation = useNavigation();
-    const menssagem = `Olá ${incident.nome} enstou entrando em contato para fazer uma doação no caso ${incident.descricao} com valor de 
-    ${Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(incident.valor)}`
+    const menssagem = `Olá ${incident.nome} enstou entrando em contato para fazer uma doação no caso ${incident.descricao} com valor de ${Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL' }).format(incident.valor)}`
 
     function navigateHome(){
         navigation.goBack();
